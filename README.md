@@ -8,3 +8,6 @@
 In the project directory, you can run: 
 
 ### `npm start`
+
+## Sample Screenshot
+![First_Screenshot](https://github.com/abhi-1995/COVID-19-Tracker/blob/master/screenshots/first_jpeg.JPG)
