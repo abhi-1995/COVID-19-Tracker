@@ -76,18 +76,17 @@ function LineGraph({ casesType = "cases"}) {
             .then(data => {
                 //clever stuff .....
                 console.log(data)
-                const chartData = buildChartData(data, 'cases');
+                const chartData = buildChartData(data, casesType);
                 setData(chartData);
             });
         }
 
         fetchData();
         
-    }, []);
+    }, [casesType]);
 
     return (
         <div>
-            <h1> I'm a graph</h1>
             {data?.length > 0 && (
                 <Line
                 data = {{
